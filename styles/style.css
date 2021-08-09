@@ -322,6 +322,11 @@ body {
 }
 
 .user_form input {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
     width: 428px;
     opacity: 0.4;
     border: 1px solid #356EAD;
@@ -332,6 +337,11 @@ body {
 }
 
 .user_form textarea {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
     width: 428px;
     border: 1px solid #356EAD;
     box-sizing: border-box;
