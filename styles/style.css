@@ -663,4 +663,12 @@ hr {
     .contact_full_info {
         padding: 56px 0;
     }
+
+    .user_form {
+        padding: 36px
+    }
+
+    .map.container {
+        padding: unset;
+    }
 }
