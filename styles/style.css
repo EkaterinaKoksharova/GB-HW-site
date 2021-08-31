@@ -109,7 +109,7 @@ body {
 
 /* Main Page */
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -125,6 +125,7 @@ body {
     background-image: url(../img/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .top_heading {
@@ -175,7 +176,7 @@ body {
 
 .project_box {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     height: 100%;
     flex-wrap: wrap;
     margin-bottom: 112px;
@@ -187,6 +188,11 @@ body {
     height: 100%;
     margin-bottom: 32px;
     position: relative;
+}
+
+.sub_projects {
+    display: flex;
+    justify-content: space-between;
 }
 
 .project_margin {
@@ -436,6 +442,11 @@ body {
     align-self: center;
 }
 
+hr {
+    opacity: 0.4;
+    /* white */
+    border: 2px solid #FFFFFF;
+}
 
 .contact_info {
     margin-top: 64px;
@@ -470,4 +481,186 @@ body {
 .copyright .text {
     color: #FFFFFF;
     opacity: 0.4;
+}
+
+ /* Styles for tablet */
+ @media (max-width: 1024px) {
+     .container {
+         padding-left: 32px;
+         padding-right: 32px;
+     }
+
+    .top_info {
+        background-position: right 280px;
+    }
+
+    .card_box {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 32px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .contact_info .list {
+        flex-direction: column;
+    }
+
+    .contact_info .list li{
+        margin-bottom: 25px;
+    }
+
+    .contact_us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_full_info {
+        padding: 56px 0;
+    }
+
+ }
+
+ /* Styles for mobile */
+@media (max-width: 667px) {
+    .header {
+        padding-top: 24px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .top_info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .top_heading .heading1{
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .top_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .top_button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .what_we_do {
+        padding-top: 48px;
+    }
+
+    .what_we_do .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .card_box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .card {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .finished_project .text {
+        width: 100%;
+    }
+
+    .project {
+        margin-bottom: 16px;
+    }
+
+    .sub_projects {
+        flex-direction: column;
+    }
+
+    .project_margin {
+        margin-right: 0;
+    }
+
+    .project_text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .interested_to_work {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 18px;
+        padding-bottom: 41px;
+    }
+
+    .interested_to_work .content {
+        width: 100%;
+    }
+
+    .interested_to_work .content .title {
+        width: 100%;
+        padding-right: 32px;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+
+    .interested_to_work .content .title .heading3 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .interested_to_work .text{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    hr {
+        width: 100%;
+        opacity: 0.4;
+        border: 1px solid #FFFFFF;
+    }
+
+    .contact_info {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .contact_info .list li {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .contact_us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_full_info {
+        padding: 56px 0;
+    }
 }
